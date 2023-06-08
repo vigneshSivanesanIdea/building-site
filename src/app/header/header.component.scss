@@ -1,0 +1,74 @@
+:host {
+    height: 100%;
+    background-color: #041c3f;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    .title {
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        font-size: 2vw;
+        .site-image {
+            background: white;
+            height: 100%;
+            display: flex;
+            color: #2b2c81;
+            align-items: flex-end;
+            position: relative;
+
+            &::before, &::after {
+                content: " ";
+                display: block;
+                overflow: hidden;
+                width: 195px;
+                transform: translateX(-40%) skewX(-45deg);
+                height: 100%;
+                z-index: 0;
+                background: white;
+                position: absolute;
+            }
+
+            &::after {
+                right: -10vw;
+            }
+
+            img {
+                z-index: 1;
+            }
+        }
+        
+    }
+    .router-links {
+        display: flex;
+        height: inherit;
+        align-items: center;
+        justify-content: space-around;
+        .routes {
+            font-size: 1.5vw;
+            color: #ffffff;
+            font-weight: 400;
+            text-decoration: none;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        mat-icon {
+            font-size: 2vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .search-icon {
+            color: white;
+        }
+    }
+}
+
+.routes:hover {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #f5b904;
+    padding: 15px;
+}
