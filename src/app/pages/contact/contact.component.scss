@@ -1,0 +1,92 @@
+.contacts {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.image {
+    background: #e6c462;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-left: 1em;
+}
+
+.image:hover {
+    background: #ac9c2c;
+    width: 60px;
+    height: 60px;
+}
+
+.contact-card {
+    flex: 1 1 100%;
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+}
+
+.contact-content {
+    align-content: left;
+}
+
+.contact-form {
+    background: #e6c462;
+    display: flex;
+    margin-top: 5em;
+    padding: auto;
+}
+
+.contact-form-section1 {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+
+.contact-form-section2 {
+    flex: 1 1 100%;
+    display: flex;
+    gap: 1em;
+    padding: 4em 4em 4em 0em;
+}
+
+.contact-msg{
+    padding-top: 3em;
+    flex: 1 1 20%;
+    gap: 1em;
+    justify-content: flex-start;
+    
+}
+
+.text-box{
+    flex: 1 1 80%;
+}
+
+.text1{
+    height: 2em;
+    border: none;
+    border-left: 5px solid brown;
+    padding: 0.5em;
+    margin: 0.3em;
+}
+
+.text2{
+    height: 40%;
+    width: 97%;
+    border: none;
+    border-left: 5px solid brown;
+    padding: 0.5em;
+    margin: 0.3em;
+}
+
+.button{
+    border: none;
+    width: 10em;
+    height: 3em;
+    border-left: 5px solid aliceblue;
+    padding: auto;
+    background: brown;
+    margin: 0.3em;
+    color: #e6c462;
+}
