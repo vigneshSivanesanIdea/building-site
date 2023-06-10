@@ -1,10 +1,20 @@
-:host {
-    height: 100%;
-    display: block;
-    width: 100%;
-    overflow: auto;
+.container1{
+    height: 0;
+    width: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 13vh 87vh;
+    grid-template-areas:
+    "h"
+    "m";
 }
 
-.header-container {
-    height: 15%;
+.header-container{
+    grid-area: h;
+}
+
+.router-container{
+    grid-area: m;
+    overflow: auto;
 }

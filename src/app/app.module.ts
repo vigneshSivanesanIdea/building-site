@@ -13,7 +13,6 @@ import {MatIconModule} from '@angular/material/icon';
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
   ],
   imports: [
     BrowserModule,
