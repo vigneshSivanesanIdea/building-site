@@ -231,21 +231,24 @@ h3 {
 // }
 
 .about-us-wwa,
-.projects-heading {
+.projects-heading,
+.ourTeam-heading {
     margin-bottom: 1.5em;
     border-left: 5px solid #808080;
     padding-left: 1em;
 }
 
 .about-us-wwa>span,
-.projects-heading>span {
+.projects-heading>span,
+.ourTeam-heading>span {
     font-size: 1.5em;
     color: #FFD700;
     font-weight: bolder;
 }
 
 .about-us-wwa>p,
-.projects-heading>p {
+.projects-heading>p,
+.ourTeam-heading>p {
     color: #808080;
     font-weight: 700;
     margin-top: 0.5em;
@@ -423,7 +426,7 @@ h3 {
     height: auto;
 }
 
-.machines{
+.machines {
     background-image: url("https://images.unsplash.com/photo-1564483335100-3413b45dbd37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=896&q=80");
     display: flex;
     flex-direction: column;
@@ -431,31 +434,130 @@ h3 {
     align-items: center;
 }
 
-.machines > *{
+.machines>* {
     flex-shrink: 1;
     flex-grow: 0;
     flex-basis: 1;
 }
 
-.machines-heading > span{
+.machines-heading>span {
     text-align: center;
     color: #FFD700;
     font-size: 4em;
     font-weight: 500;
 }
 
-.machines-p > p{
-    font-size: 1em;
+.machines-p>p {
+    font-size: 1.5em;
     color: #D4AF37;
     justify-content: center;
     align-items: center;
-    padding: 5em;
+    padding: 2em;
     font-weight: bolder;
+}
+
+.ourTeam {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.ourTeam-heading {
+    transform: rotate(90deg);
+}
+
+.vert1,
+.vert2,
+.vert3 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.vert1>img,
+.vert2>img,
+.vert3>img {
+    margin-top: 1.5em;
+    width: 10vw;
+    flex: 1;
+}
+
+.ourTeam-heading {
+    align-self: flex-start;
+    margin-top: 5.5em;
+}
+
+.ourTeam-N {
+    font-size: 24px;
+    color: #808080;
+    font-weight: bolder;
+}
+
+.ourTeam-R {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #D4AF37;
+    margin-bottom: 1.5em;
+}
+
+.map{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contactCard{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-evenly;
+    gap: 2em;
+    padding: 4em;
+}
+
+.contact-card{
+    flex: auto;
+    justify-content: center;
+}
+
+.contact-content > span{
+    margin-left: 1.5em;
+    color: #D4AF37;
+}
+
+.contact-card{
+    display: flex;
+    flex-direction: row;
+}
+
+.i-box-gold-c {
+    height: 4em;
+    width: 4em;
+    background-color: #D4AF37;
+    margin-bottom: 1em;
+}
+
+.i-box-gold-c i {
+    color: #121212;
+    padding: 0.65em;
+}
+
+.contactMap{
+    padding: 2em;
+    background-color: #212121;
 }
 
 
 
 
+@media screen and (max-width:1045px) {
+    .map{
+        flex-direction: column;
+    }
+    
+    .contactMap{
+        align-self: center;
+    }
+}
 
 @media screen and (max-width:1300px) {
     .about-us-img>img {
@@ -480,20 +582,23 @@ h3 {
 }
 
 @media screen and (max-width:878px) {
-    .projects1{
+    .projects1 {
         flex-direction: column;
         align-items: center;
         flex: 1;
     }
-    .projects-heading{
+
+    .projects-heading {
         align-self: flex-start;
         margin-left: 5vw;
     }
-    #projects-btn > a{
+
+    #projects-btn>a {
         width: 80vw;
-       text-align: center;
+        text-align: center;
     }
 }
+
 @media screen and (max-width:878px) {
     .home-img-card>p {
         font-size: 25px;
@@ -596,5 +701,67 @@ h3 {
     .ivestments {
         width: unset;
         margin-top: 2em;
+    }
+}
+
+@media screen and (max-width:550px) {
+    #machines-s1 {
+        margin: 7vw !important;
+    }
+
+    .ourTeam-heading {
+        display: none;
+    }
+
+    .ourTeam {
+        flex-direction: column;
+    }
+
+    .img {
+        align-self: center;
+        margin-bottom: 1.5em;
+    }
+
+    .vert1>img,
+    .vert2>img,
+    .vert3>img {
+        align-self: center;
+        width: 85vw;
+    }
+
+}
+
+@media screen and (max-width:660px) {
+    .machines-heading {
+        padding-left: 7em;
+        padding-right: 7em;
+    }
+
+    #machines-s1 {
+        margin: 10vw !important;
+    }
+
+    #machines-s2 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .machines-p>p {
+        padding: 0;
+        width: unset !important;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .ourTeam-heading {
+        margin-top: 3.5em;
+    }
+
+    .ourTeam-heading>span {
+        font-size: 1.5em !important;
+    }
+
+    .ourTeam-heading>p {
+        font-size: 1em !important;
     }
 }
