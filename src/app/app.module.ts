@@ -12,7 +12,7 @@ import {MatIconModule} from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

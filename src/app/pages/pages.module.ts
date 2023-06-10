@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from '../footer/footer.component';
 import {MatIconModule} from '@angular/material/icon';
+import { CopyrightComponent } from '../copyright/copyright.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {MatIconModule} from '@angular/material/icon';
     ProjectComponent,
     AboutComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    CopyrightComponent
   ],
   imports: [
     CommonModule,

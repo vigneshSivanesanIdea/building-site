@@ -1,0 +1,11 @@
+div {
+    background-color: gold;
+    height: 3vh;
+    .cp-text{ color: rgba(0,0,0,.7); text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 700
+    }
+}
