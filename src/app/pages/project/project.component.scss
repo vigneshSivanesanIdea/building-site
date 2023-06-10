@@ -1,0 +1,130 @@
+body {
+    font-family: "Roboto", sans-serif;
+  
+    margin: 2vw;
+  }
+  
+  p:hover {
+    cursor: default;
+  }
+  
+  .grid-container {
+    border: solid 1px #eeeeee;
+    padding: 0.5vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 24.5vw;
+    grid-gap: 0.6vw;
+  }
+  
+  .griditem {
+    background-size: cover;
+    background-position: center;
+    // filter: grayscale(100%);
+    padding: 2vw;
+    font-size: 0.8em;
+    box-sizing: border-box;
+  }
+  .griditem:hover {
+    cursor: pointer;
+    filter: brightness(70%) grayscale(100%);
+  }
+  
+  .image1 {
+    filter: grayscale(100%);
+    background-position: left center;
+    background-image: url("https://drive.google.com/uc?export=view&id=1w6uHLIlwvF0f32u9hbA7pt2C6BTlOP0J");
+    /*grid-area: image1;*/
+  }
+  .image2 {
+    text-align: center;
+  }
+  .image3 {
+    filter: grayscale(100%);
+    background-image: url("https://drive.google.com/uc?export=view&id=1bH0S3RWoO_g78Q18O0wRMZ9DXhVEBzKe");
+    /*grid-area: image3;*/
+  }
+  .image4 {
+
+    text-align: center;
+  }
+  .image5 {
+
+    text-align: center;
+}
+  .image6 {
+    filter: grayscale(100%);
+    background-image: url("https://drive.google.com/uc?export=view&id=17i4_JZPFdje_iC_QlsmhI7d0kArDs9NA");
+  }
+  .image7 {
+
+    text-align: center;
+}
+  .image8 {
+    filter: grayscale(100%);
+    background-image: url("https://drive.google.com/uc?export=view&id=1cuEqBt8IszjvuvYls9xGwTeHH6k1hYrX");
+  }
+  .modal {
+    z-index: 3;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* below covers window area*/
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #ffffff;
+  }
+  .modal-content {
+    display: block;
+  }
+  .modal-btn {
+    color: red;
+    padding: 4px 8px;
+    position: absolute;
+    right: 10vw;
+    top: 1vh;
+  }
+  .modal-btn:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+  }
+  .animate-zoom {
+    animation: animatezoom 0.8s;
+  }
+  @keyframes animatezoom {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  .topright {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  .mod-img {
+    object-fit: scale-down;
+    display: block;
+    height: 98vh;
+    width: 100%;
+    max-width: 99vw;
+    margin: 1vh auto;
+  }
+  mod-img:hover {
+  }
+  h2 {
+    color: red;
+  }
+  
+  .Projects-para{
+    font-family: 'Roboto',sans-serif;
+    font-size: 3em;
+    line-height: 0.5em;
+    position: relative;
+    top: 40%;
+  }

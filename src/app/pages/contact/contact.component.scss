@@ -1,11 +1,11 @@
 .contacts {
     display: flex;
-    gap: 1em;
     justify-content: center;
+    padding: 5em;
 }
 
 .image {
-    background: #e6c462;
+    background: #FFD700;
     width: 60px;
     height: 60px;
     border-radius: 10px;
@@ -19,14 +19,22 @@
 }
 
 .contact-card {
-    flex: 1 1 100%;
     display: flex;
     gap: 1em;
     padding: 1em;
+    box-shadow: 100%;
 }
 
 .contact-content {
+    min-width: 28ch;
     align-content: left;
+}
+
+.contact-content > span{
+    font-size: 1.5em;
+    margin-bottom: 0.7em;
+    margin-left: 0.6em;
+    color: #D4AF37;
 }
 
 .contact-form {
