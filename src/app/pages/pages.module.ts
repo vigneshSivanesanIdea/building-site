@@ -8,7 +8,7 @@ import { ProjectComponent } from './project/project.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from '../footer/footer.component';
-
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,8 @@ import { FooterComponent } from '../footer/footer.component';
   ],
   imports: [
     CommonModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    MatIconModule
   ]
 })
 export class PagesModule { }

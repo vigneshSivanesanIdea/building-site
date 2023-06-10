@@ -10,11 +10,11 @@
     "m";
 }
 
-.header-container{
-    grid-area: h;
-}
-
 .router-container{
     grid-area: m;
     overflow: auto;
+}
+.header-container {
+    height: 10vh;
+    grid-area: h;
 }

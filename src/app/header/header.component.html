@@ -1,13 +1,32 @@
-<div class="title">
+<!-- <div class="title">
   <div class="site-image">
-    <img src="../../assets/building-image.png" />
+    <img src="../../assets/logo-gold-1.png" />
   </div>
-  <!-- <span class="site-title">NEW DELTA HOLDING</span> -->
 </div>
-<div class="router-links">
-  <a class="about-router routes" [routerLink]="['/about']">About</a>
-  <a class="service-router routes" [routerLink]="['/services']">Services</a>
-  <a class="project-router routes" [routerLink]="['/projects']">Projects</a>
-  <a class="contact-router routes" [routerLink]="['/contact']">Contact</a>
-  <mat-icon class="search-icon">search</mat-icon>
-</div>
+<ul class="router-links">
+  <li>
+    <a class="about-router routes" [routerLink]="['/about']">About</a>
+  </li>
+  <li>
+    <a class="service-router routes" [routerLink]="['/services']">Services</a>
+  </li>
+  <li>
+    <a class="project-router routes" [routerLink]="['/projects']">Projects</a>
+  </li>
+  <li>
+    <a class="contact-router routes" [routerLink]="['/contact']">Contact</a>
+  </li>
+</ul> -->
+
+<header class="header">
+  <img src="../../assets/logo-gold-1.png" />
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a class="router-links" [routerLink]="['/home']">Home</a></li>
+    <li><a class="router-links" [routerLink]="['/about']">About</a></li>
+    <li><a class="router-links" [routerLink]="['/services']">Services</a></li>
+    <li><a class="router-links" [routerLink]="['/projects']">Projects</a></li>
+    <li><a class="router-links" [routerLink]="['/contact']">Contact</a></li>
+  </ul>
+</header>
