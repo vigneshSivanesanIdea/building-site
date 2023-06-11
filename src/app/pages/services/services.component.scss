@@ -18,6 +18,7 @@
   background-size: 100vw auto;
   filter: brightness(70%) contrast(120%) saturate(120%);
   transition: 0.5s ease;
+  overflow: hidden;
 }
 
 .home-img-card>p {
@@ -27,7 +28,7 @@
   top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
-  filter: contrast(200%);
+  filter: contrast(91%) saturate(1.5);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   letter-spacing: 3px;
   font-size: 40px;
@@ -42,7 +43,7 @@
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-  filter: contrast(200%);
+  filter: contrast(91%) saturate(1.5);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   letter-spacing: 3px;
   font-size: 40px;
@@ -72,11 +73,10 @@
   align-items: center;
   padding: 1em;
   margin-bottom: 5em;
+  background-color: #1a1a1a;
 }
 
 .i-box-gold {
-  height: 4em;
-  width: 3.5em;
   background-color: #D4AF37;
   margin-bottom: 1em;
 }

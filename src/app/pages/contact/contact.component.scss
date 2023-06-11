@@ -51,6 +51,7 @@
     padding: 2em;
     min-height: 50vh;
     margin-top: 1.5em;
+    justify-content: space-evenly;
     // flex-basis: 0 0 30%;
 }
 
@@ -62,6 +63,11 @@
         "t"
         "b";
     gap: 2em;
+}
+
+.contact-form-section2 {
+    display: flex;
+    align-self: center;
 }
 
 .contact-msg {
