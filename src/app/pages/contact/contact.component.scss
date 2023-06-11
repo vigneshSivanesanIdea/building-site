@@ -1,3 +1,9 @@
+::-webkit-input-placeholder {
+    /* Edge */
+    font-size: 1.2em;
+    color: #ac9c2c;
+}
+
 .contacts {
     display: flex;
     justify-content: center;
@@ -23,6 +29,7 @@
     gap: 1em;
     padding: 1em;
     box-shadow: 100%;
+    align-items: center;
 }
 
 .contact-content {
@@ -30,72 +37,214 @@
     align-content: left;
 }
 
-.contact-content > span{
-    font-size: 1.5em;
+.contact-content>span {
+    font-size: 1.2em;
     margin-bottom: 0.7em;
     margin-left: 0.6em;
-    color: #D4AF37;
+    color: #ac9c2c;
+    text-shadow: #0000;
 }
 
 .contact-form {
-    background: #e6c462;
+    background: #222222;
     display: flex;
-    margin-top: 5em;
-    padding: auto;
+    padding: 2em;
+    min-height: 50vh;
+    margin-top: 1.5em;
+    // flex-basis: 0 0 30%;
 }
 
 .contact-form-section1 {
-    flex: 1 1 100%;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: auto;
+    grid-template-areas: "h"
+        "t"
+        "b";
+    gap: 2em;
+}
+
+.contact-msg {
+    grid-area: h;
+    color: #FFD700;
+    font-size: 2.5em;
+    text-align: center;
+    align-self: center;
+    line-height: 1.2em;
+}
+
+.text-box {
+    grid-area: t;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text-box>input,
+.text-box>select {
+    display: flex;
+    flex: 0 0 40%;
+    min-width: 11ch;
+}
+
+.text-box>input,
+.text-box>select,
+.text-box>textarea {
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #121212;
+    box-shadow: #121212;
+    color: #ac9c2c;
+    border-left: 5px solid #FFD700;
+}
+
+.text-box>textarea {
+    height: 15ch;
+}
+
+.option,
+select {
+    font-size: 1.2em;
+    color: #ac9c2c;
+}
+
+.text-box>textarea {
+    display: flex;
+    flex: 0 0 90%;
+}
+
+.button {
+    grid-area: b;
+    display: flex;
     justify-content: center;
-    gap: 1em;
+    text-align: center;
 }
 
-.contact-form-section2 {
-    flex: 1 1 100%;
+
+.button>a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #FFD700;
+    /* Vibrant gold color */
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    border: 0.5px solid #808080;
+}
+
+.button>a:hover {
+    border: none;
+    color: #121212;
+    /* Darker shade of gold for hover state */
+    background: #FFD700;
+    /* Vibrant gold color */
+    box-shadow: 0 0 10px #FFD700, 0 0 40px #FFD700, 0 0 80px #FFD700;
+    /* Gold box shadow */
+    transition-delay: 1s;
+}
+
+.button>a span {
+    position: absolute;
+    display: block;
+}
+
+.button>a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #FFD700);
+    /* Gold gradient */
+}
+
+.button>a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+.button>a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #FFD700);
+    /* Gold gradient */
+}
+
+.button>a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.button>a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #FFD700);
+    /* Gold gradient */
+}
+
+.button>a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.button>a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #FFD700);
+    /* Gold gradient */
+}
+
+.button>a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+.base-card {
+    background-color: #121212;
+    color: #FFD700;
+    margin: auto;
+    justify-content: center;
     display: flex;
-    gap: 1em;
-    padding: 4em 4em 4em 0em;
+    min-height: 5em;
+    line-height: 2.5em;
+    align-items: center;
+    transition: all .2s ease-in-out;
 }
 
-.contact-msg{
-    padding-top: 3em;
-    flex: 1 1 20%;
-    gap: 1em;
-    justify-content: flex-start;
-    
+.base-card:hover {
+    background-color: #808080;
+    letter-spacing: 6px;
 }
 
-.text-box{
-    flex: 1 1 80%;
+@media screen and (max-width:1179px) {
+    .contact-form {
+        flex-direction: column;
+        gap: 2em;
+        align-items: center;
+    }
+
+    .button {
+        align-self: center;
+        line-height: 2.5em;
+    }
 }
 
-.text1{
-    width: 47%;
-    height: 2em;
-    border: none;
-    border-left: 5px solid brown;
-    padding: 0.5em;
-    margin: 0.3em;
-}
-
-.text2{
-    height: 40%;
-    width: 97%;
-    border: none;
-    border-left: 5px solid brown;
-    padding: 0.5em;
-    margin: 0.3em;
-}
-
-.button{
-    border: none;
-    width: 10em;
-    height: 3em;
-    border-left: 5px solid aliceblue;
-    padding: auto;
-    background: brown;
-    margin: 0.3em;
-    color: #e6c462;
+@media screen and (max-width:1000px) {
+    .contacts {
+        flex-direction: column;
+        align-items: center;
+    }
 }
