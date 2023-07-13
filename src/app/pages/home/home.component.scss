@@ -71,13 +71,12 @@ h3 {
 }
 
 .home-img-card>p {
-    filter: saturate(100%);
     line-height: 2em;
     position: absolute;
     top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
-    filter: contrast(200%);
+    filter: contrast(70%);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 3px;
     font-size: 40px;
